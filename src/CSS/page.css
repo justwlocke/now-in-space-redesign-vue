@@ -1,0 +1,157 @@
+.pageContainer {
+  height: 100vh;
+  width: 100vw;
+
+  text-align: center;
+
+  background-image: url("./../Images/NowInSpaceInterior.png");
+
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top center;
+  background-size: contain;
+}
+
+.BackgroundContainer {
+}
+
+#contents {
+  position: absolute;
+  top: 75px;
+}
+
+#Ships {
+  height: 100px;
+}
+
+.spacecraft {
+  width: 100%;
+}
+
+#patches {
+  margin-top: -3%;
+}
+
+.patchMonitor {
+  width: 80%;
+}
+
+.col-3.left {
+  margin-top: -10%;
+}
+
+.patch {
+  width: 35%;
+}
+
+#crewImage1 {
+  /*Gets the picture almost centered in the div.*/
+  margin: -55% auto auto 30%;
+}
+
+/* The right most crew patch*/
+#crewImage1 img {
+  /*Forces pic to inherit width of div*/
+  width: 100%;
+
+  transform: rotateY(-40deg) skew(10deg, -10deg) rotateX(10deg);
+}
+
+#crewImage2 {
+  /*Gets the picture almost centered in the div.*/
+  margin: -43% auto auto auto;
+}
+
+#crewImage2 img {
+  /*Forces pic to inherit width of div*/
+  width: 100%;
+
+  transform: rotateY(-0deg) skew(0deg, 0deg) rotateX(20deg);
+}
+
+.col-3.right {
+  margin-top: -10%;
+}
+
+#crewImage3 {
+  /*Gets the picture almost centered in the div.*/
+  margin: -59% auto auto 30%;
+}
+
+/*The Leftmost crew patch*/
+#crewImage3 img {
+  /*Forces pic to inherit width of div*/
+  width: 130%;
+
+  transform: rotateY(40deg) skew(-10deg, 10deg) rotateX(10deg);
+}
+
+#Cards {
+  padding-top: 3%;
+}
+
+#Cards img {
+  width: 100%;
+}
+
+.Astronaut * {
+  border: 1px solid red;
+}
+
+.Astronaut {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 20%;
+}
+
+.astronaut-container {
+  position: relative;
+
+  width: auto;
+}
+
+.AstroImage {
+  position: absolute;
+  top: 0px;
+
+  width: 99%;
+  height: 100%;
+
+  z-index: 99;
+
+  background-image: url("../Images/Astronauts/SamanthaCristoforetti.jpg");
+  background-position: 65% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.CardCrop {
+  clip-path: polygon(
+    /*Top Left Corner*/ 4.5% 3%,
+    /*Bottom Left Corner*/ 4.5% 85%,
+    /*Bottom Right Corner*/ 96.5% 85%,
+    /*Right Edge Cut*/ 96.5% 19.2%,
+    /*Left Edge Cut*/ 73.2% 3% /* Polygon closes automatically. */
+  );
+}
+
+.AstronautName {
+  position: absolute;
+  bottom: 0px;
+  width: 99%;
+  height: 15%;
+
+  z-index: 100;
+
+  font-size: 1.6vw;
+
+  text-align: center;
+  color: white;
+}
+
+#CarouselImage img {
+  width: 20%;
+}
