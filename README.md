@@ -3,4 +3,4 @@ Created with CodeSandbox
 
 yarn install
 
-vite
+yarn vite
