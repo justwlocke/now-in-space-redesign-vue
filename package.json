@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "swiper": "^8.0.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.1.0",
+    "@vue/compiler-sfc": "^3.2.0",
+    "vite": "^2.7.0"
+  },
+  "license": "MIT",
+  "name": "swiper-slides-per-view-vue-forked",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "start": "vite"
+  },
+  "tags": [
+    "swiper"
+  ],
+  "keywords": [],
+  "description": "Now In Space Redesign but forked from Swipers slider per \"vue\""
+}
