@@ -4,7 +4,6 @@
 html,
 body {
   position: relative;
-  height: 100%;
 }
 
 body {
@@ -17,11 +16,14 @@ body {
 }
 
 .swiper {
+  position: relative;
+
   width: 90%;
-  height: 10%;
 }
 
 .swiper-slide {
+  position: relative;
+
   text-align: center;
   font-size: 18px;
   background: yellow;

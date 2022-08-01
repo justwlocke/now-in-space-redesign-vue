@@ -10,6 +10,8 @@
   background-attachment: scroll;
   background-position: top center;
   background-size: contain;
+
+  border: 3px solid green;
 }
 
 .BackgroundContainer {
@@ -86,6 +88,17 @@
   transform: rotateY(40deg) skew(-10deg, 10deg) rotateX(10deg);
 }
 
+#spacer {
+  height: 10%;
+}
+
+.carousel {
+  position: relative;
+  border: 1px solid pink;
+
+  height: 30%;
+}
+
 #Cards {
   padding-top: 3%;
 }
@@ -104,7 +117,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  width: 20%;
+  width: 100%;
 }
 
 .astronaut-container {
