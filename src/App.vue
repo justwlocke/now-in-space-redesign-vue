@@ -1,5 +1,5 @@
 <template>
-  <div class="pageContainer">
+  <div class="pageContainer aspect-ratio">
     <div class="BackgroundContainer">
       <div class="container-lg">
         <!--Spacecraft-->
@@ -52,46 +52,47 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <!--Astronaut Carousel -->
+        <!--Astronaut Carousel -->
 
-      <div id="spacer"></div>
-
-      <div class="carousel">
-        <swiper
-          :slidesPerView="4"
-          :spaceBetween="30"
-          :pagination="{
-            clickable: true,
-          }"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide>
-            <div class="Astronaut" id="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/DefaultAstronautCard2.png"
-                  alt="First slide"
-                />
-                <div class="AstroImage CardCrop"></div>
-                <div class="AstronautName">Samantha Cristoforetti</div>
+        <div id="spacer"></div>
+        <!--
+        <div class="carousel">
+          <swiper
+            :slidesPerView="4"
+            :spaceBetween="30"
+            :pagination="{
+              clickable: true,
+            }"
+            :modules="modules"
+            class="mySwiper"
+          >
+            <swiper-slide>
+              <div class="Astronaut" id="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/DefaultAstronautCard2.png"
+                    alt="First slide"
+                  />
+                  <div class="AstroImage CardCrop"></div>
+                  <div class="AstronautName">Samantha Cristoforetti</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
-          <swiper-slide>Slide 6</swiper-slide>
-          <swiper-slide>Slide 7</swiper-slide>
-          <swiper-slide>Slide 8</swiper-slide>
-          <swiper-slide>Slide 9</swiper-slide>
-        </swiper>
+            </swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            <swiper-slide>Slide 4</swiper-slide>
+            <swiper-slide>Slide 5</swiper-slide>
+            <swiper-slide>Slide 6</swiper-slide>
+            <swiper-slide>Slide 7</swiper-slide>
+            <swiper-slide>Slide 8</swiper-slide>
+            <swiper-slide>Slide 9</swiper-slide>
+          </swiper>
+        </div>
+        -->
+        <!--End of Carousel-->
       </div>
-      <!--End of Carousel-->
     </div>
   </div>
 </template>

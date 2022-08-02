@@ -16,7 +16,7 @@ body {
 }
 
 .swiper {
-  position: relative;
+  position: absolute;
 
   width: 90%;
 }
