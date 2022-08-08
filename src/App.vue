@@ -1,62 +1,9 @@
 <template>
-  <div class="pageContainer aspect-ratio">
-    <div class="BackgroundContainer">
-      <div class="container-lg">
-        <!--Spacecraft-->
-        <div class="row justify-content-center">
-          <div class="col-3">
-            <img class="spacecraft" src="./Images/SpacecraftSoyuz.png" />
-          </div>
-          <div class="col-2">
-            <img class="spacecraft" src="./Images/SpacecraftSpaceXDragon.png" />
-          </div>
-        </div>
-        <!-- Patches Below-->
-        <div class="row justify-content-center">
-          <!-- Left Crew Patch -->
-          <div class="col-3 left">
-            <img
-              class="patchMonitor"
-              src="./Images/NowInSpaceMonitorLeft.png"
-            />
-            <div class="patch" id="crewImage3">
-              <img
-                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-              />
-            </div>
-          </div>
-
-          <!-- Middle Crew Patch -->
-          <div class="col-3">
-            <img
-              class="patchMonitor"
-              src="./Images/NowInSpaceMonitorMiddle.png"
-            />
-            <div class="patch" id="crewImage2">
-              <img
-                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-              />
-            </div>
-          </div>
-
-          <!-- Right Crew Patch -->
-          <div class="col-3 right">
-            <img
-              class="patchMonitor"
-              src="./Images/NowInSpaceMonitorRight.png"
-            />
-            <div class="patch" id="crewImage1">
-              <img
-                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-              />
-            </div>
-          </div>
-        </div>
-
-        <!--Astronaut Carousel -->
-
-        <div id="spacer"></div>
-        <!--
+  <div class="pageContainer">
+    <img class="backgroundImage" src="./Images/NowInSpaceBackground2.png" />
+    <div class="ContentsContainer">
+      <!--Astronaut Carousel -->
+      <!--
         <div class="carousel">
           <swiper
             :slidesPerView="4"
@@ -91,8 +38,7 @@
           </swiper>
         </div>
         -->
-        <!--End of Carousel-->
-      </div>
+      <!--End of Carousel-->
     </div>
   </div>
 </template>
