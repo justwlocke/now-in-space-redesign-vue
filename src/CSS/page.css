@@ -69,6 +69,9 @@
 .expeditionMonitors {
   position: absolute;
 
+  display: flex;
+  justify-content: center;
+
   top: 15%;
   left: 18%;
   right: 18%;
@@ -77,8 +80,14 @@
   border: 1px solid greenyellow;
 }
 
-.monitor img {
+.monitor {
   width: 22%;
+
+  /* border: 1px solid aliceblue; */
+}
+
+.monitor img {
+  width: 100%;
 }
 
 #MonitorLeft {
@@ -88,36 +97,67 @@
 
   left: 0;
 }
-/*
+
 #MonitorMiddle {
   position: absolute;
 
-  left: 40%;
-  right: 60%;
+  top: 30%;
+  left: auto;
+  right: auto;
 
-  border: 1px solid blue;
-}
-*/
-#crewImage1 {
-  /*Gets the picture almost centered in the div.*/
-  margin: -55% auto auto 30%;
+  width: 28%;
 }
 
-/* The right most crew patch*/
-#crewImage1 img {
-  /*Forces pic to inherit width of div*/
-  width: 100%;
+#MonitorRight {
+  position: absolute;
 
-  transform: rotateY(-40deg) skew(10deg, -10deg) rotateX(10deg);
+  margin-top: -5%;
+
+  right: 0;
+}
+
+.patch {
+  position: absolute;
+
+  top: 0;
+
+  /* border: 1px solid blueviolet; */
+}
+
+#PatchLeft {
+  left: 25%;
+  right: 19%;
+  top: 25%;
+  bottom: 21%;
+
+  transform: rotateY(40deg) skew(-14deg, 14deg) rotateX(-10deg);
+}
+
+#PatchMiddle {
+  left: 25%;
+  right: 23%;
+  top: 7%;
+  bottom: 10%;
+
+  transform: rotateY(0deg) skew(-0deg, 0deg) rotateX(10deg);
+}
+
+#PatchRight {
+  left: 20%;
+  right: 23%;
+  top: 25%;
+  bottom: 20%;
+
+  transform: rotateY(-40deg) skew(16deg, -16deg) rotateX(10deg);
 }
 
 .carousel {
   position: absolute;
 
-  bottom: 10%;
-  left: 10%;
-  right: 10%;
-  top: 46%;
+  bottom: 8%;
+  left: 8%;
+  right: 8%;
+  top: 44%;
 
   border: 1px solid pink;
 }
@@ -125,32 +165,35 @@
 .Cards img {
   width: 100%;
 }
-/*
-.Cards * {
-  border: 1px solid red;
-}
-*/
-/*Option 1*/
 
+.Cards * {
+}
+
+/*Option 1*/
+/*
 .Cards {
   position: relative;
 
   width: 100%;
 }
-
+*/
 /*Option 2*/
-/*
+
 .Cards {
   position: absolute;
 
   width: 100%;
   height: 100%;
+
+  border: 2px solid red;
 }
-*/
+
 .astronaut-container {
   position: relative;
 
-  width: auto;
+  width: 100%;
+
+  /*border: 1px solid chartreuse;*/
 }
 
 .AstroImage {
@@ -175,6 +218,36 @@
     /*Bottom Right Corner*/ 96.5% 85%,
     /*Right Edge Cut*/ 96.5% 19.2%,
     /*Left Edge Cut*/ 73.2% 3% /* Polygon closes automatically. */
+  );
+}
+
+.CardCrop2 {
+  clip-path: polygon(
+    /*Top Left Corner*/ 2.5% 1.5%,
+    /*Bottom Left Corner*/ 2.5% 85%,
+    /*Bottom Right Corner*/ 98.5% 85%,
+    /*Right Edge Cut*/ 98.5% 24%,
+    /*Left Edge Cut*/ 69.5% 1.5% /* Polygon closes automatically. */
+  );
+}
+
+.CardCrop3 {
+  clip-path: polygon(
+    /*Top Left Corner*/ 2.5% 1.5%,
+    /*Bottom Left Corner*/ 2.5% 86%,
+    /*Bottom Right Corner*/ 98.5% 86%,
+    /*Right Edge Cut*/ 98.5% 24.5%,
+    /*Left Edge Cut*/ 67% 1.5% /* Polygon closes automatically. */
+  );
+}
+
+.CardCrop4 {
+  clip-path: polygon(
+    /*Top Left Corner*/ 2.5% 1.5%,
+    /*Bottom Left Corner*/ 2.5% 87%,
+    /*Bottom Right Corner*/ 98.5% 87%,
+    /*Right Edge Cut*/ 98.5% 24%,
+    /*Left Edge Cut*/ 64.5% 1.5% /* Polygon closes automatically. */
   );
 }
 
