@@ -18,14 +18,15 @@ body {
 .swiper {
   position: absolute;
 
+  left: 7.5%;
+
   height: 100%;
-  width: 100%;
+  width: 85%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: yellow;
 
   height: 80%;
 
@@ -44,10 +45,53 @@ body {
   align-items: center;
 }
 
-.swiper-button-prev {
-  margin-left: -10%;
+.swiper-button-prev-u {
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.swiper-button-next {
-  margin-right: -10%;
+.swiper-button-prev-u.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-next-u {
+  top: 50%;
+  width: calc(var(--swiper-navigation-size) / 44 * 27);
+  height: var(--swiper-navigation-size);
+  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-next-u.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.custom-pagination {
+  bottom: 0%;
+}
+
+.swiper-pagination-bullet {
+  width: var(
+    --swiper-pagination-bullet-width,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
+  height: var(
+    --swiper-pagination-bullet-height,
+    var(--swiper-pagination-bullet-size, 10px)
+  );
 }

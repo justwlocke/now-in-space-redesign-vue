@@ -45,6 +45,7 @@
             prevEl: '.swiper-button-prev-u',
           }"
           :pagination="{
+            el: '.custom-pagination',
             clickable: true,
           }"
           :modules="modules"
@@ -55,11 +56,11 @@
               <div class="astronaut-container">
                 <img
                   class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/DefaultAstronautCard2.png"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                   alt="First slide"
                 />
-                <div class="AstroImage CardCrop"></div>
-                <div class="AstronautName">Samantha Cristoforetti</div>
+                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstronautName">Bob Hines</div>
               </div>
             </div>
           </swiper-slide>
@@ -68,10 +69,11 @@
               <div class="astronaut-container">
                 <img
                   class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackground600x750.png"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                   alt="third slide"
                 />
-                <div class="AstroImage CardCrop2"></div>
+                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstronautName">Oleg Artemyev</div>
               </div>
             </div>
           </swiper-slide>
@@ -80,10 +82,39 @@
               <div class="astronaut-container">
                 <img
                   class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackground585x780G.png"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                   alt="third slide"
                 />
-                <div class="AstroImage CardCrop3"></div>
+                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstronautName">Jessica Watkins</div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="Cards">
+              <a data-bs-toggle="modal" href="#samantha-modal">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="Fourth slide"
+                  />
+                  <div class="AstroImage samantha CardCrop3"></div>
+                  <div class="AstronautName">Samantha Cristoforetti</div>
+                </div>
+              </a>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="Cards">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Fifth slide"
+                />
+                <div class="AstroImage justin CardCrop3"></div>
+                <div class="AstronautName">Justin Locke</div>
               </div>
             </div>
           </swiper-slide>
@@ -92,26 +123,102 @@
               <div class="astronaut-container">
                 <img
                   class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackground580x870.png"
-                  alt="Fourth slide"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Sixth slide"
                 />
-                <div class="AstroImage CardCrop4"></div>
+                <div class="AstroImage docbrown CardCrop3"></div>
+                <div class="AstronautName">Dr. Emmet Brown</div>
               </div>
             </div>
           </swiper-slide>
-          <swiper-slide>Slide 5</swiper-slide>
-          <swiper-slide>Slide 6</swiper-slide>
-          <swiper-slide>Slide 7</swiper-slide>
-          <swiper-slide>Slide 8</swiper-slide>
-          <swiper-slide>Slide 9</swiper-slide>
+          <swiper-slide>
+            <div class="Cards">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Seventh slide"
+                />
+                <div class="AstroImage bombur CardCrop3"></div>
+                <div class="AstronautName">Bombur</div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="Cards">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Eigth slide"
+                />
+                <div class="AstroImage goku CardCrop3"></div>
+                <div class="AstronautName">Goku</div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="Cards">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Ninth slide"
+                />
+                <div class="AstroImage missingno CardCrop3"></div>
+                <div class="AstronautName">MissingNo</div>
+              </div>
+            </div>
+          </swiper-slide>
         </swiper>
 
-        <div class="swiper-button-next swiper-button-next-u"></div>
-        <div class="swiper-button-prev swiper-button-prev-u"></div>
+        <div class="swiper-button-next-u">
+          <img src="./Images/CarouselArrowRight.png" />
+        </div>
+
+        <div
+          class="custom-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+          style="bottom: -5%"
+        ></div>
+
+        <div class="swiper-button-prev-u">
+          <img src="./Images/CarouselArrowLeft.png" />
+        </div>
 
         <!--End of Carousel-->
       </div>
     </div>
+
+    <!--Modals -->
+
+    <div
+      class="portfolio-modal modal fade"
+      id="samantha-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content astronaut-modal">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <h3>Hello</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--End Of Page Container -->
   </div>
 </template>
 

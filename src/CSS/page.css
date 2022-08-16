@@ -155,8 +155,8 @@
   position: absolute;
 
   bottom: 8%;
-  left: 8%;
-  right: 8%;
+  left: 2%;
+  right: 2%;
   top: 44%;
 
   border: 1px solid pink;
@@ -169,23 +169,13 @@
 .Cards * {
 }
 
-/*Option 1*/
-/*
-.Cards {
-  position: relative;
-
-  width: 100%;
-}
-*/
-/*Option 2*/
-
 .Cards {
   position: absolute;
 
   width: 100%;
   height: 100%;
 
-  border: 2px solid red;
+  /*border: 2px solid red;*/
 }
 
 .astronaut-container {
@@ -196,6 +186,7 @@
   /*border: 1px solid chartreuse;*/
 }
 
+/* Good defaults for the position of the photo*/
 .AstroImage {
   position: absolute;
   top: 0px;
@@ -205,10 +196,37 @@
 
   z-index: 99;
 
-  background-image: url("../Images/Astronauts/SamanthaCristoforetti.jpg");
   background-position: 65% center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.samantha {
+  background-image: url("../Images/Astronauts/SamanthaCristoforetti.jpg");
+}
+
+.justin {
+  background-image: url("../Images/Astronauts/JustinLocke-Headshot.jpg");
+
+  background-position: 40% center;
+}
+
+.bombur {
+  background-image: url("../Images/Astronauts/BomburCheese.png");
+}
+
+.goku {
+  background-image: url("../Images/Astronauts/Goku.png");
+
+  background-position: 50% center;
+}
+
+.docbrown {
+  background-image: url("../Images/Astronauts/docbrown.png");
+}
+
+.missingno {
+  background-image: url("../Images/Astronauts/MissingNo.png");
 }
 
 .CardCrop {
@@ -233,11 +251,11 @@
 
 .CardCrop3 {
   clip-path: polygon(
-    /*Top Left Corner*/ 2.5% 1.5%,
+    /*Top Left Corner*/ 2.5% 2%,
     /*Bottom Left Corner*/ 2.5% 86%,
     /*Bottom Right Corner*/ 98.5% 86%,
-    /*Right Edge Cut*/ 98.5% 24.5%,
-    /*Left Edge Cut*/ 67% 1.5% /* Polygon closes automatically. */
+    /*Right Edge Cut*/ 98.5% 25%,
+    /*Left Edge Cut*/ 67% 2% /* Polygon closes automatically. */
   );
 }
 
@@ -257,11 +275,50 @@
   width: 99%;
   height: 15%;
 
-  padding-top: 2%;
+  padding-top: 3%;
   z-index: 100;
 
-  font-size: 1.3vw;
+  font-size: 1.4vw;
 
   text-align: center;
   color: white;
+}
+
+.swiper-button-next-u {
+  position: absolute;
+
+  right: 0%;
+
+  width: 5%;
+}
+
+.swiper-button-prev-u {
+  position: absolute;
+
+  left: 0%;
+
+  width: 5%;
+}
+
+.swiper-button-next-u img {
+  width: 100%;
+}
+
+.swiper-button-prev-u img {
+  width: 100%;
+}
+
+.astronaut-modal {
+  border: solid 8px rgb(0, 136, 248);
+  border-radius: 20px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  background-color: transparent;
 }
