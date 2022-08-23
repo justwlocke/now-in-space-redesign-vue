@@ -39,7 +39,7 @@
       <div class="carousel">
         <swiper
           :slidesPerView="4"
-          :spaceBetween="30"
+          :spaceBetween="25"
           :navigation="{
             nextEl: '.swiper-button-next-u',
             prevEl: '.swiper-button-prev-u',
@@ -59,7 +59,7 @@
                   src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                   alt="First slide"
                 />
-                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstroImage bob CardCrop3"></div>
                 <div class="AstronautName">Bob Hines</div>
               </div>
             </div>
@@ -72,28 +72,30 @@
                   src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                   alt="third slide"
                 />
-                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstroImage oleg CardCrop3"></div>
                 <div class="AstronautName">Oleg Artemyev</div>
               </div>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="third slide"
-                />
-                <div class="AstroImage samantha CardCrop3"></div>
-                <div class="AstronautName">Jessica Watkins</div>
-              </div>
+              <a data-bs-toggle="modal" href="#jessica-modal">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="third slide"
+                  />
+                  <div class="AstroImage jessica CardCrop3"></div>
+                  <div class="AstronautName">Jessica Watkins</div>
+                </div>
+              </a>
             </div>
           </swiper-slide>
           <swiper-slide>
             <div class="Cards">
               <a data-bs-toggle="modal" href="#samantha-modal">
-                <div class="astronaut-container">
+                <div class="astronaut-container card-shadow">
                   <img
                     class="d-inline"
                     src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
@@ -193,6 +195,64 @@
 
     <div
       class="portfolio-modal modal fade"
+      id="jessica-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content astronaut-modal">
+          <div class="modal-header">
+            <div class="Cards modal-card">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Jessica Watkins"
+                />
+                <div class="AstroImage jessica CardCrop3"></div>
+                <div class="AstronautName modal-astro-card-name">
+                  Jessica Watkins
+                </div>
+              </div>
+            </div>
+            <span class="modal-astro-name"> Jessica Watkins </span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-astro-details">
+              <p>
+                Jessica something something in space. Going to type a lot of
+                text here to see what it looks like. Hmm. Texty-text-text. Lorum
+                Ipsum. Bacon. Lightfall.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a data-bs-toggle="modal" href="#-modal">
+              <div class="modal-prev-astro">
+                <img src="./Images/CarouselArrowLeft.png" />
+                <p class="modal-astro-arrows-prev">PREVIOUS ASTRONAUT</p>
+              </div>
+            </a>
+            <a data-bs-toggle="modal" href="#samantha-modal">
+              <div class="modal-next-astro">
+                <img src="./Images/CarouselArrowRight.png" />
+                <p class="modal-astro-arrows-next">NEXT ASTRONAUT</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio-modal modal fade"
       id="samantha-modal"
       tabindex="-1"
       role="dialog"
@@ -200,19 +260,50 @@
     >
       <div class="modal-dialog">
         <div class="modal-content astronaut-modal">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h3>Hello</h3>
+          <div class="modal-header">
+            <div class="Cards modal-card">
+              <div class="astronaut-container">
+                <img
+                  class="d-inline"
+                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                  alt="Samantha Cristoforetti"
+                />
+                <div class="AstroImage samantha CardCrop3"></div>
+                <div class="AstronautName modal-astro-card-name">
+                  Samantha Cristoforetti
                 </div>
               </div>
             </div>
+            <span class="modal-astro-name"> Samantha Cristoforetti </span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-astro-details">
+              <p>
+                Samantha something something in space. Going to type a lot of
+                text here to see what it looks like. Hmm. Texty-text-text. Lorum
+                Ipsum. Bacon. Lightfall.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a data-bs-toggle="modal" href="#jessica-modal">
+              <div class="modal-prev-astro">
+                <img src="./Images/CarouselArrowLeft.png" />
+                <p class="modal-astro-arrows-prev">PREVIOUS ASTRONAUT</p>
+              </div>
+            </a>
+            <a data-bs-toggle="modal" href="#-modal">
+              <div class="modal-next-astro">
+                <img src="./Images/CarouselArrowRight.png" />
+                <p class="modal-astro-arrows-next">NEXT ASTRONAUT</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
