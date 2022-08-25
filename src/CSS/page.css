@@ -318,11 +318,6 @@
   width: 100%;
 }
 
-.astronaut-modal {
-  border: solid 8px rgb(0, 136, 248);
-  border-radius: 20px;
-}
-
 .modal-dialog {
   max-width: 95vw;
 
@@ -351,6 +346,53 @@
   top: 5%;
 
   height: 65vh;
+}
+
+.modal-header-ship {
+}
+
+.ship-modal {
+  border-radius: 30px;
+
+  background-image: url("../Images/ShipModalBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.modal-ship-name {
+  position: absolute;
+
+  top: 3%;
+  left: 20%;
+  right: 10%;
+
+  color: blue;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+
+.modal-ship-details {
+  position: absolute;
+
+  left: 20%;
+  right: 10%;
+  top: 5%;
+  bottom: 10%;
+
+  font-size: 1.5rem;
+}
+
+.modal-ship-img {
+  position: absolute;
+  top: 10%;
+  left: 3%;
+
+  width: 15%;
+}
+
+.astronaut-modal {
+  border: solid 8px rgb(0, 136, 248);
+  border-radius: 20px;
 }
 
 .modal-astro-details {

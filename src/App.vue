@@ -3,7 +3,9 @@
     <img class="backgroundImage" src="./Images/NowInSpaceBackground2.png" />
     <div class="ContentsContainer">
       <div class="spaceships">
-        <img id="Ship1" src="./Images/SpacecraftSpaceXDragon.png" />
+        <a data-bs-toggle="modal" href="#spaceX-modal">
+          <img id="Ship1" src="./Images/SpacecraftSpaceXDragon.png" />
+        </a>
         <img id="Ship2" src="./Images/SpacecraftSoyuz.png" />
       </div>
 
@@ -192,6 +194,41 @@
     </div>
 
     <!--Modals -->
+
+    <div
+      class="portfolio-modal modal fade"
+      id="spaceX-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content ship-modal">
+          <div class="modal-header">
+            <img
+              class="modal-ship-img"
+              src="./Images/SpacecraftSpaceXDragon.png"
+            />
+            <span class="modal-ship-name"> Space X Dragon </span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-ship-details">
+              <p>
+                SpaceX something something in space. Going to type a lot of text
+                here to see what it looks like. Hmm. Texty-text-text. Lorum
+                Ipsum. Bacon. Lightfall.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div
       class="portfolio-modal modal fade"
