@@ -42,6 +42,7 @@
           <swiper
             :modules="modules"
             :slides-per-view="4"
+            :slides-per-group="4"
             :loopedSlides="8"
             :loop="false"
             :centeredSlides="false"
