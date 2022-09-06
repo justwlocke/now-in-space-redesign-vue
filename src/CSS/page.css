@@ -23,6 +23,30 @@
   border: 2px solid purple;
 }
 
+.NASALogo {
+  position: absolute;
+
+  top: 9%;
+  left: 1%;
+  right: 91%;
+}
+
+.NASALogo img {
+  width: 100%;
+}
+
+.kidsClub {
+  position: absolute;
+
+  top: 10%;
+  left: 89%;
+  right: 1%;
+}
+
+.kidsClub img {
+  width: 100%;
+}
+
 .spaceships {
   position: absolute;
 

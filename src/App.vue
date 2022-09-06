@@ -1,7 +1,17 @@
 <template>
   <div class="pageContainer">
-    <img class="backgroundImage" src="./Images/NowInSpaceBackground2.png" />
+    <img class="backgroundImage" src="./Images/NowInSpaceBackgroundWide.png" />
     <div class="ContentsContainer">
+      <div class="NASALogo">
+        <a href="https://www.nasa.gov/" target="_blank">
+          <img src="./Images/Branding/NASALogo.png" />
+        </a>
+      </div>
+      <div class="kidsClub">
+        <a href="https://www.nasa.gov/kidsclub/" target="_blank">
+          <img src="./Images/Branding/NASAKidsClub.png" />
+        </a>
+      </div>
       <div class="spaceships">
         <a data-bs-toggle="modal" href="#spaceX-modal">
           <img id="Ship1" src="./Images/SpacecraftSpaceXDragon.png" />
