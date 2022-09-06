@@ -37,164 +37,160 @@
       </div>
 
       <!--Astronaut Carousel -->
-
       <div class="carousel">
-        <swiper
-          :slidesPerView="4"
-          :spaceBetween="25"
-          :navigation="{
-            nextEl: '.swiper-button-next-u',
-            prevEl: '.swiper-button-prev-u',
-          }"
-          :pagination="{
-            el: '.custom-pagination',
-            clickable: true,
-          }"
-          :modules="modules"
-          class="mySwiper"
-        >
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="First slide"
-                />
-                <div class="AstroImage bob CardCrop3"></div>
-                <div class="AstronautName">Bob Hines</div>
+        <main id="swiper-contain">
+          <swiper
+            :modules="modules"
+            :slides-per-view="4"
+            :loopedSlides="8"
+            :loop="false"
+            :centeredSlides="false"
+            :space-between="25"
+            :speed="500"
+            :preloadImages="false"
+            :lazy="{
+              loadPrevNext: true,
+              loadOnTransitionStart: true,
+              loadPrevNextAmount: 2,
+            }"
+            :navigation="true"
+            :pagination="{
+              clickable: true,
+            }"
+            :watchSlidesProgress="true"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="First slide"
+                  />
+                  <div class="AstroImage bob CardCrop3"></div>
+                  <div class="AstronautName">Bob Hines</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="third slide"
-                />
-                <div class="AstroImage oleg CardCrop3"></div>
-                <div class="AstronautName">Oleg Artemyev</div>
-              </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <a data-bs-toggle="modal" href="#jessica-modal">
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
                 <div class="astronaut-container">
                   <img
                     class="d-inline"
                     src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
                     alt="third slide"
                   />
-                  <div class="AstroImage jessica CardCrop3"></div>
-                  <div class="AstronautName">Jessica Watkins</div>
+                  <div class="AstroImage oleg CardCrop3"></div>
+                  <div class="AstronautName">Oleg Artemyev</div>
                 </div>
-              </a>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <a data-bs-toggle="modal" href="#samantha-modal">
-                <div class="astronaut-container card-shadow">
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <a data-bs-toggle="modal" href="#jessica-modal">
+                  <div class="astronaut-container">
+                    <img
+                      class="d-inline"
+                      src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                      alt="third slide"
+                    />
+                    <div class="AstroImage jessica CardCrop3"></div>
+                    <div class="AstronautName">Jessica Watkins</div>
+                  </div>
+                </a>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <a data-bs-toggle="modal" href="#samantha-modal">
+                  <div class="astronaut-container card-shadow">
+                    <img
+                      class="d-inline"
+                      src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                      alt="Fourth slide"
+                    />
+                    <div class="AstroImage samantha CardCrop3"></div>
+                    <div class="AstronautName">Samantha Cristoforetti</div>
+                  </div>
+                </a>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
                   <img
                     class="d-inline"
                     src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                    alt="Fourth slide"
+                    alt="Fifth slide"
                   />
-                  <div class="AstroImage samantha CardCrop3"></div>
-                  <div class="AstronautName">Samantha Cristoforetti</div>
+                  <div class="AstroImage justin CardCrop3"></div>
+                  <div class="AstronautName">Justin Locke</div>
                 </div>
-              </a>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="Fifth slide"
-                />
-                <div class="AstroImage justin CardCrop3"></div>
-                <div class="AstronautName">Justin Locke</div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="Sixth slide"
-                />
-                <div class="AstroImage docbrown CardCrop3"></div>
-                <div class="AstronautName">Dr. Emmet Brown</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="Sixth slide"
+                  />
+                  <div class="AstroImage docbrown CardCrop3"></div>
+                  <div class="AstronautName">Dr. Emmet Brown</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="Seventh slide"
-                />
-                <div class="AstroImage bombur CardCrop3"></div>
-                <div class="AstronautName">Bombur</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="Seventh slide"
+                  />
+                  <div class="AstroImage bombur CardCrop3"></div>
+                  <div class="AstronautName">Bombur</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="Eigth slide"
-                />
-                <div class="AstroImage goku CardCrop3"></div>
-                <div class="AstronautName">Goku</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="Eigth slide"
+                  />
+                  <div class="AstroImage goku CardCrop3"></div>
+                  <div class="AstronautName">Goku</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-          <swiper-slide>
-            <div class="Cards">
-              <div class="astronaut-container">
-                <img
-                  class="d-inline"
-                  src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
-                  alt="Ninth slide"
-                />
-                <div class="AstroImage missingno CardCrop3"></div>
-                <div class="AstronautName">MissingNo</div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="Cards">
+                <div class="astronaut-container">
+                  <img
+                    class="d-inline"
+                    src="./Images/Astronauts/CardBackgrounds/CardBackgroundBlue585x780.png"
+                    alt="Ninth slide"
+                  />
+                  <div class="AstroImage missingno CardCrop3"></div>
+                  <div class="AstronautName">MissingNo</div>
+                </div>
               </div>
-            </div>
-          </swiper-slide>
-        </swiper>
-
-        <div class="swiper-button-next-u">
-          <img src="./Images/CarouselArrowRight.png" />
-        </div>
-
-        <div
-          class="custom-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
-          style="bottom: -5%"
-        ></div>
-
-        <div class="swiper-button-prev-u">
-          <img src="./Images/CarouselArrowLeft.png" />
-        </div>
-
-        <!--End of Carousel-->
+            </swiper-slide>
+            ...
+          </swiper>
+        </main>
       </div>
+      <!--End of Carousel-->
     </div>
+    <!--End of Contents Container-->
 
     <!--Modals -->
-
     <div
       class="portfolio-modal modal fade"
       id="spaceX-modal"
@@ -351,10 +347,10 @@
 </template>
 
 <script>
-// Import Swiper Vue.js components
-// import required modules
+// import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
 
+// Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
 
 // Import Swiper styles
@@ -367,6 +363,7 @@ import "./CSS/style.css";
 import "./CSS/page.css";
 
 export default {
+  name: "astro-carousel",
   components: {
     Swiper,
     SwiperSlide,
@@ -378,4 +375,7 @@ export default {
   },
 };
 </script>
+
+
+
 

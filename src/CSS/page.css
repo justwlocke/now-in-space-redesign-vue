@@ -153,13 +153,11 @@
 
 .carousel {
   position: absolute;
-
-  bottom: 8%;
+  bottom: 2%;
   left: 2%;
   right: 2%;
-  top: 44%;
-
-  /*border: 1px solid pink;*/
+  top: 52%;
+  overflow: hidden;
 }
 
 .Cards img {
