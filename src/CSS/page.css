@@ -10,6 +10,7 @@
 
 .backgroundImage {
   max-width: 100%;
+  max-height: 100vh;
 }
 
 .ContentsContainer {
@@ -155,6 +156,8 @@
   bottom: 21%;
 
   transform: rotateY(40deg) skew(-14deg, 14deg) rotateX(-10deg);
+
+  z-index: 0;
 }
 
 #PatchMiddle {
@@ -340,10 +343,30 @@
   width: 100%;
 }
 
+.modal {
+  position: absolute;
+}
+
 .modal-dialog {
+  position: relative;
+
   max-width: 95vw;
 
   max-height: 95vh;
+
+  height: 90%;
+
+  z-index: 100;
+}
+
+/*Hides the borders in the modals*/
+
+.modal-header {
+  border-bottom-width: 0px;
+}
+
+.modal-footer {
+  border-top-width: 0px;
 }
 
 .close-modal {
@@ -365,31 +388,68 @@
 }
 
 .modal-body {
-  top: 5%;
-
-  height: 65vh;
+  height: 100%;
 }
 
-.modal-header-ship {
-}
+/*Ship Modals*/
 
 .ship-modal {
-  border-radius: 30px;
+  height: 100%;
 
-  background-image: url("../Images/ShipModalBackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  border-radius: 25px;
+  border: solid 5px rgb(0, 136, 248);
+
+  background-image: linear-gradient(to top right, grey, lightgrey);
+}
+
+.modal-ship-background-circle {
+  pointer-events: none;
+
+  position: absolute;
+  top: -25vw;
+  right: -25vw;
+
+  border-radius: 50%;
+  height: 50vw;
+  width: 50vw;
+  border: 2px solid white;
+}
+
+.modal-ship-background-circle-two {
+  pointer-events: none;
+
+  position: absolute;
+  top: 10%;
+  left: 10%;
+
+  border-radius: 50%;
+  height: 40vw;
+  width: 40vw;
+  border: 2px solid white;
+}
+
+.modal-ship-circle-clip {
+  clip-path: polygon(
+    /*Top Left Corner*/ 0% 0%,
+    /*Top Right Corner*/ 100% 0%,
+    /*Bottom Right Corner*/ 100% 100%,
+    /*Botom Left Corner*/ 0% 100% /* Polygon closes automatically. */
+  );
+}
+
+.modal-ship-circle-clip-two {
+  clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
 }
 
 .modal-ship-name {
   position: absolute;
 
-  top: 3%;
+  top: 0%;
   left: 20%;
   right: 10%;
 
   color: blue;
-  font-size: 1.9rem;
+  font-size: 3.3vw;
   font-weight: bold;
 }
 
@@ -401,7 +461,9 @@
   top: 5%;
   bottom: 10%;
 
-  font-size: 1.5rem;
+  font-size: 2.5vw;
+
+  pointer-events: none;
 }
 
 .modal-ship-img {
@@ -412,7 +474,65 @@
   width: 15%;
 }
 
+/* Crew Modals */
+
+.crew-modal {
+  height: 100%;
+
+  border-radius: 25px;
+  border: solid 5px rgb(0, 136, 248);
+
+  background-image: linear-gradient(
+    124deg,
+    rgba(183, 195, 218, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(183, 195, 218, 1) 100%
+  );
+}
+
+.modal-crew-img {
+  position: absolute;
+  top: 14%;
+  left: 3%;
+
+  width: 60%;
+}
+
+.modal-crew-name {
+  color: blue;
+  font-size: 3vw;
+  font-weight: bold;
+}
+
+.modal-crew-body {
+  height: 100%;
+}
+
+.modal-crew-details {
+  position: absolute;
+
+  left: 65%;
+  right: 0%;
+  top: 5%;
+  bottom: 10%;
+
+  font-size: 2vw;
+
+  pointer-events: none;
+}
+
+.modal-crew-button-close {
+  position: absolute;
+
+  top: 3%;
+  right: 1%;
+}
+
+/* Astronaut Modals */
+
 .astronaut-modal {
+  height: 100%;
+
   border: solid 8px rgb(0, 136, 248);
   border-radius: 20px;
 }
@@ -426,6 +546,8 @@
   bottom: 10%;
 
   font-size: 1.5rem;
+
+  pointer-events: none;
 }
 
 .modal-astro-name {

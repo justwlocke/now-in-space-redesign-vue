@@ -16,33 +16,41 @@
         <a data-bs-toggle="modal" href="#spaceX-modal">
           <img id="Ship1" src="./Images/SpacecraftSpaceXDragon.png" />
         </a>
-        <img id="Ship2" src="./Images/SpacecraftSoyuz.png" />
+        <a data-bs-toggle="modal" href="#soyuz-modal">
+          <img id="Ship2" src="./Images/SpacecraftSoyuz.png" />
+        </a>
       </div>
 
       <div class="expeditionMonitors">
         <div class="monitor" id="MonitorLeft">
-          <img src="./Images/NowInSpaceMonitorLeft.png" />
-          <div class="patch" id="PatchLeft">
-            <img
-              src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-            />
-          </div>
+          <a data-bs-toggle="modal" href="#ex67-modal">
+            <img src="./Images/NowInSpaceMonitorLeft.png" />
+            <div class="patch" id="PatchLeft">
+              <img
+                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
+              />
+            </div>
+          </a>
         </div>
         <div class="monitor" id="MonitorMiddle">
-          <img src="./Images/NowInSpaceMonitorMiddle.png" />
-          <div class="patch" id="PatchMiddle">
-            <img
-              src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-            />
-          </div>
+          <a data-bs-toggle="modal" href="#ex69-modal">
+            <img src="./Images/NowInSpaceMonitorMiddle.png" />
+            <div class="patch" id="PatchMiddle">
+              <img
+                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
+              />
+            </div>
+          </a>
         </div>
         <div class="monitor" id="MonitorRight">
-          <img src="./Images/NowInSpaceMonitorRight.png" />
-          <div class="patch" id="PatchRight">
-            <img
-              src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
-            />
-          </div>
+          <a data-bs-toggle="modal" href="#ex68-modal">
+            <img src="./Images/NowInSpaceMonitorRight.png" />
+            <div class="patch" id="PatchRight">
+              <img
+                src="https://www.nasa.gov/specials/kidsclub/nowinspace/expedition67-crew4/img/slide_12.png"
+              />
+            </div>
+          </a>
         </div>
       </div>
 
@@ -210,13 +218,16 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content ship-modal">
+        <div class="modal-content modal-ship-circle-clip ship-modal">
+          <div class="modal-ship-background-circle modal-ship-circle-clip-two">
+            <div class="modal-ship-background-circle-two"></div>
+          </div>
           <div class="modal-header">
             <img
               class="modal-ship-img"
               src="./Images/SpacecraftSpaceXDragon.png"
             />
-            <span class="modal-ship-name"> Space X Dragon </span>
+            <span class="modal-ship-name"> SpaceX Crew Dragon </span>
             <button
               type="button"
               class="btn-close"
@@ -227,15 +238,167 @@
           <div class="modal-body">
             <div class="modal-ship-details">
               <p>
-                SpaceX something something in space. Going to type a lot of text
-                here to see what it looks like. Hmm. Texty-text-text. Lorum
-                Ipsum. Bacon. Lightfall.
+                The SpaceX spacecraft that carries people to space is called the
+                Crew Dragon. It is launched on top of a Falcon 9 rocket. The
+                Crew Dragon launches from NASA’s Kennedy Space Center in
+                Florida. For NASA missions, the Crew Dragon carries four
+                astronauts. When it returns from space, it parachutes to a water
+                landing off the coast of Florida.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div
+      class="portfolio-modal modal fade"
+      id="soyuz-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content modal-ship-circle-clip ship-modal">
+          <div class="modal-ship-background-circle modal-ship-circle-clip-two">
+            <div class="modal-ship-background-circle-two"></div>
+          </div>
+          <div class="modal-header">
+            <img class="modal-ship-img" src="./Images/SpacecraftSoyuz.png" />
+            <span class="modal-ship-name"> Soyuz Spacecraft </span>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-ship-details">
+              <p>
+                The Russian spacecraft that carries people to space is called
+                the Soyuz. It is launched on top of a rocket that is called
+                Soyuz, too. The Soyuz spacecraft launches from the Baikonur
+                Cosmodrome in Kazakhstan. The Soyuz carries three people at a
+                time. When it returns from space, it uses parachutes and small
+                rockets to make a safe landing in the grassy plains of
+                Kazakhstan.
+                <a
+                  href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-soyuz-spacecraft-k-4"
+                  >Read More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Crew Modals -->
+
+    <div
+      class="portfolio-modal modal fade"
+      id="ex67-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content crew-modal">
+          <div class="modal-crew-body">
+            <img
+              class="modal-crew-img"
+              src="./Images/Expedition/LOTRMainCast.jpg"
+            />
+            <button
+              type="button"
+              class="btn-close modal-crew-button-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-crew-details">
+              <p>
+                <span class="modal-crew-name">The fabled adventurers</span> who
+                saved Middle Earth from the threat of Sauron and his forces.
+                Placeholder for Expedition 67.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio-modal modal fade"
+      id="ex69-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content crew-modal">
+          <div class="modal-crew-body">
+            <img
+              class="modal-crew-img"
+              src="./Images/Expedition/LOTRMainCast.jpg"
+            />
+            <button
+              type="button"
+              class="btn-close modal-crew-button-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-crew-details">
+              <p>
+                <span class="modal-crew-name">The fabled adventurers</span> who
+                saved Middle Earth from the threat of Sauron and his forces.
+                <br /><br />
+                Pictured left to right in the top row: Aragorn, Gandalf,
+                Legolas, Boromir
+                <br />
+                Pictured left to right in the bottom row: Samwise, Frodo,
+                Pippin, Merry, Gimli <br />
+                Placeholder for Expedition 69.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="portfolio-modal modal fade"
+      id="ex68-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content crew-modal">
+          <div class="modal-crew-body">
+            <img
+              class="modal-crew-img"
+              src="./Images/Expedition/LOTRMainCast.jpg"
+            />
+            <button
+              type="button"
+              class="btn-close modal-crew-button-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+            <div class="modal-crew-details">
+              <p>
+                <span class="modal-crew-name">The fabled adventurers</span> who
+                saved Middle Earth from the threat of Sauron and his forces.
+                Placeholder for Expedition 68.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Astronaut Modals -->
 
     <div
       class="portfolio-modal modal fade"
