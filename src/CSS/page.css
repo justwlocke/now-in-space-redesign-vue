@@ -5,7 +5,7 @@
   min-height: 250px;
   display: inline-block;
 
-  border: 3px solid green;
+  /*border: 3px solid green;*/
 }
 
 .backgroundImage {
@@ -21,7 +21,9 @@
   bottom: 0;
   right: 0;
 
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
+
+  z-index: 1;
 }
 
 .NASALogo {
@@ -150,6 +152,8 @@
 }
 
 #PatchLeft {
+  position: absolute;
+
   left: 25%;
   right: 19%;
   top: 25%;
@@ -161,30 +165,48 @@
 }
 
 #PatchMiddle {
+  position: absolute;
+
   left: 25%;
   right: 23%;
   top: 7%;
   bottom: 10%;
 
   transform: rotateY(0deg) skew(-0deg, 0deg) rotateX(10deg);
+
+  z-index: 0;
 }
 
 #PatchRight {
+  position: absolute;
+
   left: 20%;
   right: 23%;
   top: 25%;
   bottom: 20%;
 
-  transform: rotateY(-40deg) skew(16deg, -16deg) rotateX(10deg);
+  transform: rotateY(40deg) skew(16deg, -16deg) rotateX(10deg);
+
+  z-index: 0;
 }
 
 .carousel {
   position: absolute;
-  bottom: 2%;
+  bottom: 9%;
   left: 2%;
   right: 2%;
-  top: 52%;
+  top: 46%;
   overflow: hidden;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .Cards img {
@@ -355,8 +377,6 @@
   max-height: 95vh;
 
   height: 90%;
-
-  z-index: 100;
 }
 
 /*Hides the borders in the modals*/
@@ -545,7 +565,7 @@
   top: 5%;
   bottom: 10%;
 
-  font-size: 1.5rem;
+  font-size: 2.2vw;
 
   pointer-events: none;
 }
@@ -622,4 +642,23 @@
   text-align: right;
   font-weight: bold;
   align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+
+  width: 100%;
+  height: 7%;
+
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2.6vw;
+
+  background-color: rgba(7, 125, 195, 255);
+
+  border-top: 3px solid rgba(49, 66, 206, 255);
+
+  border-bottom: 3px solid rgba(49, 66, 206, 255);
 }

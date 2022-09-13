@@ -1,8 +1,11 @@
 # now-in-space-redesign-vue
+
 Created with CodeSandbox
+
+npm install --global yarn
 
 yarn install
 
-yarn vite
+To run locally, run "yarn vite"
 
-To Build, run "vite build"
+To Build, run "yarn vite build"
